@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AuraFarmJan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e40af 0%, #06b6d4 50%, #0891b2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f766e 0%, #0891b2 50%, #1e40af 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '🚢⚓🌊';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5em;
+            opacity: 0.3;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .dates {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .dates span {
+            font-weight: 600;
+            color: #0891b2;
+        }
+
+        h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0284c7;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #475569;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid #0891b2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-box {
+            background: linear-gradient(135deg, #ecfdf5 0%, #dcfce7 100%);
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #0891b2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0f766e;
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+            border: 1px solid #0284c7;
+        }
+
+        .contact-section h2 {
+            border: none;
+            margin-bottom: 15px;
+            color: #0369a1;
+        }
+
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .table-of-contents {
+            background: #f0f9ff;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 1px solid #0284c7;
+        }
+
+        .table-of-contents h3 {
+            color: #1e293b;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .table-of-contents ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .table-of-contents li {
+            margin-bottom: 5px;
+        }
+
+        .table-of-contents a {
+            color: #475569;
+            text-decoration: none;
+        }
+
+        .table-of-contents a:hover {
+            color: #0891b2;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .dates {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0891b2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            background: #0f766e;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Boat Dancing Adventure Game</p>
+        </header>
+
+        <main class="content">
+            <div class="dates">
+                <div><strong>Effective Date:</strong> <span>August 4, 2025</span></div>
+                <div><strong>Last Updated:</strong> <span>August 4, 2025</span></div>
+            </div>
+
+            <div class="game-box">
+                <p><strong>About AuraFarmJan:</strong> AuraFarmJan is an exciting boat adventure game where you control a boat with dancing people on the sea. Navigate through beautiful waters, collect coins, and enjoy different game modes including race challenges and free driving exploration. Experience the rhythm of the ocean with your dancing crew!</p>
+            </div>
+
+            <p>This Privacy Policy describes how AuraFarmJan ("we," "our," or "us") collects, uses, and protects information when you use our mobile application AuraFarmJan (the "App"). AuraFarmJan is a boat adventure game that operates locally on your device and displays advertisements.</p>
+
+            <div class="table-of-contents">
+                <h3>Table of Contents</h3>
+                <ol>
+                    <li><a href="#section1">Information We Collect</a></li>
+                    <li><a href="#section2">How We Use Information</a></li>
+                    <li><a href="#section3">Information Sharing</a></li>
+                    <li><a href="#section4">Third-Party Services</a></li>
+                    <li><a href="#section5">Your Privacy Choices</a></li>
+                    <li><a href="#section6">Data Retention and Deletion</a></li>
+                    <li><a href="#section7">Children's Privacy</a></li>
+                    <li><a href="#section8">International Users</a></li>
+                    <li><a href="#section9">Data Security</a></li>
+                    <li><a href="#section10">Changes to This Privacy Policy</a></li>
+                    <li><a href="#section11">Contact Us</a></li>
+                    <li><a href="#section12">Legal Basis for Processing</a></li>
+                </ol>
+            </div>
+
+            <section id="section1">
+                <h2>1. Information We Collect</h2>
+
+                <h3>Information We Do NOT Collect</h3>
+                <div class="highlight-box">
+                    <ul>
+                        <li>We do not require you to create accounts or provide personal information</li>
+                        <li>We do not collect your name, email address, phone number, or other contact information</li>
+                        <li>We do not collect precise location data (GPS coordinates)</li>
+                        <li>We do not access your photos, contacts, camera, or other personal files</li>
+                        <li>We do not record or store any audio or music from your device</li>
+                    </ul>
+                </div>
+
+                <h3>Information Automatically Collected</h3>
+                <p>When you use our App, the following information may be automatically collected through our advertising partner (Google AdMob) and app analytics:</p>
+
+                <p><strong>Device Information:</strong></p>
+                <ul>
+                    <li>Device model and operating system version</li>
+                    <li>Screen resolution and device settings</li>
+                    <li>Advertising identifier (IDFA/AAID)</li>
+                    <li>IP address (used only to determine general geographic region)</li>
+                    <li>Device performance metrics (for game optimization)</li>
+                </ul>
+
+                <p><strong>Game Usage Information:</strong></p>
+                <ul>
+                    <li>Game sessions and play duration</li>
+                    <li>Coins collected and scores achieved</li>
+                    <li>Game modes played (race mode, free driving mode)</li>
+                    <li>Boat navigation patterns and gameplay statistics</li>
+                    <li>App screens visited and session duration</li>
+                    <li>Date and time of app usage</li>
+                    <li>App crashes and performance data</li>
+                    <li>Game progression and achievements</li>
+                </ul>
+
+                <p><strong>Advertising Data:</strong></p>
+                <ul>
+                    <li>Ad interactions and preferences</li>
+                    <li>Cookies and similar tracking technologies used by ad networks</li>
+                </ul>
+            </section>
+
+            <section id="section2">
+                <h2>2. How We Use Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li><strong>Game Functionality:</strong> To provide and maintain the boat dancing adventure gaming experience</li>
+                    <li><strong>Game Improvement:</strong> To optimize boat controls, coin collection mechanics, and game modes</li>
+                    <li><strong>Performance Optimization:</strong> To ensure smooth sailing and dancing animations</li>
+                    <li><strong>Advertising:</strong> To display relevant advertisements through Google AdMob</li>
+                    <li><strong>Analytics:</strong> To understand how users interact with different game modes and improve the App</li>
+                    <li><strong>Technical Support:</strong> To diagnose and fix technical issues</li>
+                    <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+                </ul>
+                <p>We do not use your information for marketing communications since we do not collect contact information.</p>
+            </section>
+
+            <section id="section3">
+                <h2>3. Information Sharing</h2>
+                <p>We do not sell, rent, or trade your information. We may share information in the following limited circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With Google AdMob and other trusted service providers who help operate our App</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, court order, or government request</li>
+                    <li><strong>Safety and Security:</strong> To protect the rights, property, or safety of our users or others</li>
+                    <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets (users will be notified)</li>
+                </ul>
+            </section>
+
+            <section id="section4">
+                <h2>4. Third-Party Services</h2>
+                <p>Our App integrates with the following third-party services, each with their own privacy policies:</p>
+                <ul>
+                    <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                    <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Play Services Privacy Policy</a></li>
+                </ul>
+                <p>These services may collect additional information as described in their respective privacy policies.</p>
+            </section>
+
+            <section id="section5">
+                <h2>5. Your Privacy Choices</h2>
+
+                <h3>Advertising Controls</h3>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>Reset Advertising ID:</strong> Go to Settings > Google > Ads > Reset advertising ID</li>
+                        <li><strong>Opt out of Personalized Ads:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+                        <li><strong>iOS Users:</strong> Settings > Privacy & Security > Apple Advertising > Personalized Ads (toggle off)</li>
+                    </ul>
+                </div>
+
+                <h3>App Controls</h3>
+                <ul>
+                    <li><strong>Uninstall:</strong> Remove the App to stop all data collection</li>
+                    <li><strong>Device Permissions:</strong> Review and modify any permissions granted to the App in your device settings</li>
+                    <li><strong>Game Data Reset:</strong> Uninstalling and reinstalling the app will reset all locally stored game progress</li>
+                </ul>
+            </section>
+
+            <section id="section6">
+                <h2>6. Data Retention and Deletion</h2>
+                <ul>
+                    <li><strong>Game Data:</strong> Our App stores minimal game data (coins, scores, progress) locally on your device, which is deleted when you uninstall the App</li>
+                    <li><strong>Third-Party Data:</strong> Data collected by Google AdMob is retained according to Google's data retention policies</li>
+                    <li><strong>Deletion Requests:</strong> To request deletion of data associated with your advertising ID, follow Google's instructions or contact us at the email below</li>
+                    <li><strong>Local Storage:</strong> All boat customizations, coin collections, and game achievements are stored locally and removed upon app uninstallation</li>
+                </ul>
+            </section>
+
+            <section id="section7">
+                <h2>7. Children's Privacy (COPPA Compliance)</h2>
+                <div class="highlight-box">
+                    <p>Our App is suitable for all ages, including children. We are committed to protecting children's privacy:</p>
+                    <ul>
+                        <li>We do not knowingly collect personal information from children under 13</li>
+                        <li>Advertisements shown to users are family-friendly and appropriate for all ages</li>
+                        <li>The dancing boat theme is designed to be fun and appropriate for children</li>
+                        <li>Parents can contact us with questions about their child's use of the App</li>
+                        <li>If we learn we have collected personal information from a child under 13, we will delete it promptly</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="section8">
+                <h2>8. International Users</h2>
+                <p>Our App is available globally. If you are located outside the United States:</p>
+                <ul>
+                    <li>Your information may be transferred to and processed in the United States</li>
+                    <li>We implement appropriate safeguards for international data transfers</li>
+                    <li>You may have additional rights under local privacy laws (such as GDPR in Europe)</li>
+                </ul>
+
+                <h3>Rights for EU Users (GDPR)</h3>
+                <div class="info-box">
+                    <p>If you are in the European Union, you have the right to:</p>
+                    <ul>
+                        <li>Access your personal data</li>
+                        <li>Correct inaccurate data</li>
+                        <li>Delete your personal data</li>
+                        <li>Object to data processing</li>
+                        <li>Data portability</li>
+                    </ul>
+                </div>
+
+                <h3>Rights for California Users (CCPA)</h3>
+                <div class="info-box">
+                    <p>California residents have the right to:</p>
+                    <ul>
+                        <li>Know what personal information is collected</li>
+                        <li>Delete personal information</li>
+                        <li>Opt-out of the sale of personal information (we do not sell personal information)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="section9">
+                <h2>9. Data Security</h2>
+                <p>We implement reasonable technical and organizational measures to protect information collected through our App:</p>
+                <ul>
+                    <li>Data encryption during transmission</li>
+                    <li>Regular security assessments</li>
+                    <li>Limited access to data by authorized personnel only</li>
+                    <li>Secure local storage of game progress and settings</li>
+                </ul>
+                <div class="warning-box">
+                    <p><strong>Important:</strong> However, no method of transmission over the internet is 100% secure.</p>
+                </div>
+            </section>
+
+            <section id="section10">
+                <h2>10. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+                <ul>
+                    <li>We will update the "Last Updated" date at the top of this policy</li>
+                    <li>For material changes, we will provide notice through the App or other appropriate means</li>
+                    <li>Changes will take effect 30 days after notice is provided</li>
+                    <li>Your continued use of the App after the effective date constitutes acceptance of the updated policy</li>
+                </ul>
+            </section>
+
+            <div class="contact-section" id="section11">
+                <h2>11. Contact Us</h2>
+                <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:alvinapps21@gmail.com">alvinapps21@gmail.com</a></p>
+                <p><strong>Response Time:</strong> We will respond to privacy inquiries within 30 days.</p>
+                <p><strong>Our app uses Google AdMob for ads and does not collect or store any personal data.</strong></p>
+                <p><strong>To view or delete the ad-related data Google holds (like Advertising ID), visit <a href="https://myadcenter.google.com" target="_blank" rel="noopener noreferrer">https://myadcenter.google.com</a>, or reset your Ad ID via Settings → Google → Ads → Reset Ad ID.</strong></p>
+            </div>
+
+            <section id="section12">
+                <h2>12. Legal Basis for Processing (EU Users)</h2>
+                <p>For users in the European Union, we process your information based on:</p>
+                <ul>
+                    <li><strong>Legitimate Interests:</strong> To provide app functionality and improve our boat dancing game services</li>
+                    <li><strong>Consent:</strong> For personalized advertising (which you can withdraw at any time)</li>
+                    <li><strong>Legal Obligation:</strong> To comply with applicable laws</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 AuraFarmJan. All rights reserved.</p>
+            <p><em>This Privacy Policy was last updated on August 4, 2025.</em></p>
+            <p>🚢 Set sail with your dancing crew! ⚓</p>
+        </footer>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top">↑</button>
+
+    <script>
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollButton.classList.add('visible');
+            } else {
+                scrollButton.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
